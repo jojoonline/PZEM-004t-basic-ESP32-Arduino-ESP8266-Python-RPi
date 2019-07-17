@@ -1,11 +1,11 @@
-#include <HardwareSerial.h>
+
 #include <PZEM004T.h>
 
 /*
    An example on how to use ESP32 hardware serial with PZEM004T
 */
 
- HardwareSerial Serial2(2);     // Use hwserial UART2 at pins IO-16 (RX2) and IO-17 (TX2)
+
 PZEM004T pzem(&Serial2);
 IPAddress ip(192,168,1,1);
 
